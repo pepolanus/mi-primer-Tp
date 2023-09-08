@@ -4,58 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
-    <title>Kitchening</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Primer Tp</title>
+    <link rel="stylesheet" href="./css/generos.css">
+    <link rel="icon" type="image/jpg" href="../mi-primer-Tp/img/icono.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 </head>
-<body>        
+<body>  
+    <header>
+		<div class="contenedor">
+			<h2 class="logotipo">PEPFLIX</h2>
+			<div class="buscador">
+				<form action="/buscar" method="get">
+					<input type="text" name="q" placeholder="Buscar...">
+					<input type="submit" value="Buscar" class="buscar">
+				</form>
+			</div>
+			<nav>
+				<a href="./home.html" class="activo">Inicio</a>
+				<a href="#">Programas</a>
+				<a href="#">Películas</a>
+				<a href="#">Más Recientes</a>
+				<a href="./favoritos.html">Favoritos</a>
+				<a href="./generos.html">Generos</a>
+			</nav>
+		</div>
+	</header>      
     <h1>
         Generos
     </h1>
     <section class="generos">
         <article>
-             <img src="imagen 1">
+             <img src="./img/comedia-e1536069171944.jpg">
             <h2>Comedia</h2>
             <p>Una comedia es una obra que presenta una mayoría de escenas y situaciones humorísticas o festivas. Las comedias buscan entretener al público y generar risas, con finales que suelen ser felices.
             </p>
             <ul>
-                <li> <a href="">Ver Mas</a></li>
+                <li> <a href="./detail-genres.html">Ver Mas</a></li>
             </ul>
         </article>
         <article>
-        <img src="imagen 2">
+        <img src="./img/Drama-e1539133741502.jpg">
             <h2>Drama</h2>
             <p>El drama en el cine presenta historias serias, en las que prevalece el dialogo y la acción orientadas a generar tensión y presentar pasiones conflictivas más que generar humor.</p>
             <ul>
-                <li> <a href="">Ver Mas</a></li>
+                <li> <a href="./detail-genres.html">Ver Mas</a></li>
             </ul>
         </article>
         <article>
-            <img src="imgs/img-pdto-1.jpg">
+            <img src="./img/descarga.jpeg">
                 <h2>Horror</h2>
                 <p>La literatura de horror es un género de ficción literario que pretende o tiene la capacidad de asustar, causar miedo o aterrorizar sus lectores o espectadores en inducir sentimientos de horror y terror.
                 </p>
                 <ul>
-                    <li> <a href="">Ver Mas</a></li>
+                    <li> <a href="./detail-genres.html">Ver Mas</a></li>
                 </ul>
             </article>
         <article>
-            <img src="imgs/img-pdto-2.jpg">
+            <img src="./img/el-suspenso.webp">
             <h2>Suspenso</h2>
             <p>Suspenso en el cine y en la televisión. El término «suspenso» pasó a designar un género de narrativa (de ficción o de no-ficción) en el que predominan las situaciones de tensión, provocando temor o eventualmente asustando o sobresaltando, al espectador.</p>
             <ul>
-                <li> <a href="">Ver Mas</a></li>
+                <li> <a href="./detail-genres.html">Ver Mas</a></li>
             </ul>
         </article>
         <article>
-            <img src="imgs/img-pdto-3.jpg">
+            <img src="./img/romance.jpeg">
             <h2>Romance</h2>
             <p>El cine romántico es un género cinematográfico que se caracteriza por retratar argumentos construidos de eventos y personajes relacionados con la expresión del amor y las relaciones románticas.
             </p>
             <ul>
-                <li> <a href="">Ver Mas</a></li>
+                <li> <a href="./detail-genres.html">Ver Mas</a></li>
             </ul>
         </article>
     </section>
- 
+    <footer>
+		<article class="nav-footer">
+			<ul>
+				<li>Integrantes del equipo : Ezequiel Montiel, Pedro Lanus y Eugenio Saguier</li>
+			</ul>
+		</article>
+	</footer>
 </body>
 </html>
