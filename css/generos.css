@@ -113,6 +113,19 @@ display: flex;
 h2{
     color: white;
 }
+.detalles {
+display: flex;
+flex-direction: row;
+color: white;
+justify-content: right;
+}
+.texto {
+    display: flex;
+    flex-direction: row;
+    color: white;
+ justify-content: center;
+ text-align: center;
+}
 footer{
     margin-top: 30px;
     background-color: rgb(200,0,0);

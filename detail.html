@@ -2,14 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> hola chechi</title>
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>PEPFLIX</title>
+    <link rel="stylesheet" href="./css/generos.css">
+    <link rel="icon" type="image/jpg" href="../mi-primer-Tp/img/icono.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    <p>
-        hola..
-    </p>
-    <?php  echo "hola mundo"; ?>
+<body>  
+    <header>
+		<div class="contenedor">
+			<h2 class="logotipo">PEPFLIX</h2>
+			<div class="buscador">
+				<form action="/buscar" method="get">
+					<input type="text" name="q" placeholder="Buscar...">
+					<input type="submit" value="Buscar" class="buscar">
+				</form>
+			</div>
+			<nav>
+				<a href="./home.html" class="activo">Inicio</a>
+				<a href="#">Programas</a>
+				<a href="#">Películas</a>
+				<a href="#">Más Recientes</a>
+				<a href="./favoritos.html">Favoritos</a>
+				<a href="./generos.html">Generos</a>
+			</nav>
+		</div>
+	</header>      
+    <h1>
+        Detalles
+    </h1>
+    <section class="detalles">
+        <article>
+             <img src="../mi-primer-Tp/img/grown ups.webp">
+             <article class="texto"> 
+             <p> Nombre: Son Como Niños
+                Calificación: 
+                Fecha de estreno: 22 de julio de 2010
+                Duración: 102 
+                Sinopsis:  La muerte de su entrenador de baloncesto durante su infancia provoca la reunión de algunos viejos amigos, quienes se ven en el lugar en el que celebraron un campeonato años atrás. Los compañeros hablan sobre sus esposas y sus hijos, y descubren que la edad no necesariamente va de la mano con la madurez.
+                Género: comedia</p>
+             </article>
+        </article>
+       
     
+    </section>
+    <footer>
+		<article class="nav-footer">
+			<ul>
+				<li>Integrantes del equipo : Ezequiel Montiel, Pedro Lanus y Eugenio Saguier</li>
+			</ul>
+		</article>
+	</footer>
 </body>
 </html>
