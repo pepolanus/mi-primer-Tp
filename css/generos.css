@@ -116,6 +116,7 @@ h2{
 }
 .detalles {
 display: flex;
+align-items: center;
 flex-direction: row;
 color: white;
 }
@@ -126,6 +127,7 @@ color: white;
  justify-content: center;
  text-align: center;
 }
+
 footer{
     margin-top: 30px;
     background-color: rgb(200,0,0);
