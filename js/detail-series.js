@@ -13,6 +13,11 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=2824d7c18fccbca72f06f7f29e7
             <article>
                 <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" />
                 <h2>${data.name}</h2>
+                <h3>${data.overview} </h3>
+                <h3>${data.episode_run_time} </h3>
+                <h3>${data.first_air_date} </h3>
+                <h3>${data.genres[0].name} </h3>
+                <h3>${data.vote_average} </h3>
             </article>`
 
 })
