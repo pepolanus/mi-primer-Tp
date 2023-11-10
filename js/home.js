@@ -7,10 +7,10 @@ fetch('https://api.themoviedb.org/3/discover/movie?api_key=2824d7c18fccbca72f06f
 .then(function(data){
     for (let i = 0; i < 5; i++){
         peliculasFavoritas.innerHTML += `
-        <article>
+        <a href="./detail-pelis.html?id=${data.results[i].id}"><article>
             <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" />
             <h2>${data.results[i].title}</h2>
-        </article>`
+        </article></a>`
     }
 })
 .catch(function(error){
