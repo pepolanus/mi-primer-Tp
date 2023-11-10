@@ -75,6 +75,7 @@ input[type="text"] {
 h1{
     color: white;
 }
+
 .generos{
     margin-top: 30px;
     display: flex;
@@ -115,9 +116,9 @@ h2{
 }
 .detalles {
 display: flex;
+align-items: center;
 flex-direction: row;
 color: white;
-justify-content: right;
 }
 .texto {
     display: flex;
@@ -126,6 +127,7 @@ justify-content: right;
  justify-content: center;
  text-align: center;
 }
+
 footer{
     margin-top: 30px;
     background-color: rgb(200,0,0);
