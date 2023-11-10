@@ -58,3 +58,4 @@ fetch('https://api.themoviedb.org/3/discover/movie?api_key=2824d7c18fccbca72f06f
 .catch(function(error){
     alert('Error! Intente mas tarde')
 })
+a
