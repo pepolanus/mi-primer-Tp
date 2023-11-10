@@ -177,6 +177,12 @@ footer{
     margin: 10px;
    color:white;
 }
+.nav-footer img{
+    display: flex;
+    flex-direction:row;
+    width: 200px;
+    height: 200px;
+}
 
 @media screen and (max-width: 450px) {
 	header .logotipo {
