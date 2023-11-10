@@ -58,4 +58,3 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=2824d7c18fccbca72f06
 .catch(function(error){
     alert('Error! Intente mas tarde')
 })
-caches
