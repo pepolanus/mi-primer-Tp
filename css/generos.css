@@ -131,7 +131,7 @@ color: white;
 footer{
     margin-top: 30px;
     background-color: rgb(200,0,0);
-    height: 50px;
+    height: 80px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -144,11 +144,17 @@ footer{
     margin: 10px;
    color:white;
 }
-.nav-footer img{
+.fotofooter{
     display: flex;
     flex-direction:row;
-    width: 200px;
-    height: 200px;
+    justify-content: center;
+    margin-left: 15px;
+}
+.fotofooter img{
+    max-width: 20%;
+    min-height: 20px;
+    object-fit:contain;
+    margin-bottom: 15px;
 }
 
 @media screen and (max-width: 450px) {
