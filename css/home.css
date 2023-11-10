@@ -247,7 +247,7 @@ h2{
 footer{
     margin-top: 30px;
     background-color: rgb(200,0,0);
-    height: 50px;
+    height: 80px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -259,6 +259,18 @@ footer{
 .nav-footer li{
     margin: 10px;
    color:white;
+}
+.fotofooter{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-left: 15px;
+}
+.fotofooter img{
+    max-width: 20%;
+    min-height: 20px;
+    object-fit:contain;
+    margin-bottom: 15px;
 }
 
 @media screen and (max-width: 450px) {
