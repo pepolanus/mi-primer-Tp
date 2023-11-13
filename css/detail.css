@@ -190,22 +190,38 @@ footer{
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 450px) {
-	header .logotipo {
-		margin-bottom: 10px;
-		font-size: 30px;
-	}
-
-	header .contenedor {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.pelicula-principal {
-		font-size: 14px;
-	}
-
-	.pelicula-principal .descripcion {
-		max-width: 100%;
-	}
+.pelisreco{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-between
+}
+.pelisreco img{
+    width: 200px;
+}
+.pelisreco article{
+display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200px;
+}
+.pelisreco ul{
+    padding: 0;
+}
+.pelisreco p{
+    color: white;
+}
+.pelisreco article li{
+    background-color:  #E50914;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.pelisreco article li a{
+    text-decoration: none;
+    color: white;
 }
