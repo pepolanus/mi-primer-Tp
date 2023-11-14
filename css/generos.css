@@ -157,6 +157,22 @@ footer{
     margin-bottom: 15px;
 }
 
+.GenerosTit{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+}
+
+.generosP{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+
 @media screen and (max-width: 450px) {
 	header .logotipo {
 		margin-bottom: 10px;

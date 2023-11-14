@@ -1,4 +1,4 @@
-let container = document.querySelector('#lol')
+let container = document.querySelector('#aaaj')
 let queryBusquedad = location.search
 let queryString = new URLSearchParams (queryBusquedad)
 let peliculaOSerieBuscada= queryString.get('busqueda')
@@ -16,14 +16,11 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
         <article>
             <ul class="ul">
                 <p>
-                    Nombre: ${data.results[i].name}<br> 
+                    Nombre: ${data.results[i].title}<br> 
                     Rating: ${data.results[i].vote_average}<br>
-                    Fecha de estreno: ${data.results[i].first_air_date}<br>
+                    Fecha de estreno: ${data.results[i].release_date}<br>
                     Sinopsis:${data.results[i].overview}<br>
                     Genero:${data.results[i].genre_ids} <br>
-                    <a href="./favoritos.html">
-                        <button type="button" class="boton">Favoritos</button>
-                    </a>
                 </p>
             </ul> 
             </article>`

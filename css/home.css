@@ -273,6 +273,15 @@ footer{
     object-fit:contain;
     margin-bottom: 15px;
 }
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section ul{
+    text-decoration: none;
+    color: white;
+}
 
 @media screen and (max-width: 450px) {
 	header .logotipo {
