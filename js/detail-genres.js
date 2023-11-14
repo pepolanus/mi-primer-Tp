@@ -20,3 +20,4 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=2824d7c18fccbca72f0
 
 
 
+
