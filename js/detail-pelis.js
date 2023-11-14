@@ -13,11 +13,11 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
             <article>
                 <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" />
                 <h2>${data.title}</h2>
-                <h3>${data.overview} </h3>
-                <h3>${data.runtime} </h3>
-                <h3>${data.release_date} </h3>
-                <h3>${data.genres[0].name} </h3>
-                <h3>${data.vote_average} </h3>
+                <h3> Sinopsis: ${data.overview} </h3>
+                <h3> Duracion: ${data.runtime} </h3>
+                <h3> Fecha de estreno: ${data.release_date} </h3>
+                <h3> Genero: ${data.genres[0].name} </h3>
+                <h3> Rating: ${data.vote_average} </h3>
             </article>`
 
 })

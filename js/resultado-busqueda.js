@@ -9,25 +9,26 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
 })
 .then(function(data){
     for(i=0; i< data.results.length; i++){
+        console.log(data)
         container.innerHTML +=`
-        <article>
+        <a href="./buscador.html?id=${data.results[i].id}"><article>
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
         </article>
         <article>
             <ul class="ul">
                 <p>
-                    Nombre: ${data.results[i].title?data.results[i].title:data.results[i].name}<br> 
-                    Rating: ${data.results[i].vote_average}<br>
-                    Fecha de estreno: ${data.results[i].release_date?data.results[i].release_date:data.results[i].first_air_date}<br>
+                    ${data.results[i].title?data.results[i].title:data.results[i].name}<br> 
                     Sinopsis:${data.results[i].overview}<br>
-                    Genero:${data.results[i].genre_ids} <br>
+                    Fecha de estreno: ${data.results[i].release_date?data.results[i].release_date:data.results[i].first_air_date}<br>
+                    Genero:${data.results[i].genre_ids[0]} <br>
+                    Rating: ${data.results[i].vote_average}<br>
                 </p>
             </ul> 
             </article>`
            }
        })
-       .catch(function(err){
-           console.log(err)
+       .catch(function(error){
+           console.log('Error')
        })
 
      
