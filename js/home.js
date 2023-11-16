@@ -6,6 +6,7 @@ fetch('https://api.themoviedb.org/3/discover/movie?api_key=2824d7c18fccbca72f06f
 })
 .then(function(data){
     for (let i = 0; i < 5; i++){
+        console.log(data)
         peliculasFavoritas.innerHTML += `
         <a href="./detail-pelis.html?id=${data.results[i].id}"><article>
             <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" />
@@ -14,7 +15,7 @@ fetch('https://api.themoviedb.org/3/discover/movie?api_key=2824d7c18fccbca72f06f
     }
 })
 .catch(function(error){
-    alert('Error! Intente mas tarde')
+    console.log('Error! Intente mas tarde')
 })
 
 
@@ -34,7 +35,7 @@ fetch('https://api.themoviedb.org/3/discover/tv?api_key=2824d7c18fccbca72f06f7f2
     }
 })
 .catch(function(error){
-    alert('Error! Intente mas tarde')
+    console.log('Error! Intente mas tarde')
 })
 
 
@@ -55,5 +56,5 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=2824d7c18fccbca72f06
     }
 })
 .catch(function(error){
-    alert('Error! Intente mas tarde')
+    console.log('Error! Intente mas tarde')
 })

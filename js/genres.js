@@ -27,7 +27,7 @@ fetch('https://api.themoviedb.org/3/genre/tv/list?api_key=2824d7c18fccbca72f06f7
 })
 .then(function(data){
     console.log(data)
-    let datagenerostv = data.genrestv
+    let datagenerostv = data.genres
     for (let i = 0; i < datagenerostv.length; i++){
        genrestv.innerHTML += `
        <a href="./detail-genres.html?id=${datagenerostv[i].id}"><article>
