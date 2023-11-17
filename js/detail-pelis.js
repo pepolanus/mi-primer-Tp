@@ -27,7 +27,8 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2824d7c18fccbca72f06f7f2
 
 let pelisreco = document.querySelector('.pelisreco')
 
-fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=2824d7c18fccbca72f06f7f29e7ebcd8')
+fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=2824d7c18fccbca72f06f7f29e7ebcd8`)
+
 .then(function(response){
     return response.json()
 })

@@ -54,6 +54,9 @@ header nav a.activo {
     justify-content: space-between;
     align-items: center;
 }
+.buscador label{
+    color: white;
+}
 
 input[type="text"] {
     padding: 10px;
@@ -280,6 +283,9 @@ footer{
 }
 .section ul{
     text-decoration: none;
+    color: white;
+}
+h1{
     color: white;
 }
 
